@@ -1,1 +1,419 @@
-
+<p><strong>Testing </strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>The purpose of testing is to discover errors. Testing is the process of trying to discover every conceivable fault or weakness in a work product. It provides a way to check the functionality of components, subassemblies, assemblies and/or a finished product. It is the process of exercising software with the intent of ensuring that the Software system meets its requirements and user expectations and does not fail in an unacceptable manner. There are various types of tests available,In this blog article we considered black box and white box testing techniques for our mobile application</p>
+<p><strong>&nbsp;</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="288">
+<p><strong>Type of Testing</strong></p>
+<p>&nbsp;</p>
+</td>
+<td width="288">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>White-box Testing </strong>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</td>
+<td width="288">
+<p><strong>Black-box Testing</strong></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="288">
+<p>Tester visibility</p>
+</td>
+<td width="288">
+<p>have visibility to the code and write test cases based upon the code</p>
+</td>
+<td width="288">
+<p>have no visibility to the code and write test cases based on possible inputs and outputs for functionality documented in specifications and/or requirements</p>
+</td>
+</tr>
+<tr>
+<td width="288">
+<p>A failed test</p>
+<p>case reveals</p>
+</td>
+<td width="288">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a problem (fault)</p>
+</td>
+<td width="288">
+<p>a symptom of a problem (a failure)</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="288">
+<p>Is it Controlled?</p>
+</td>
+<td width="288">
+<p>Yes &ndash; the test case helps to identify the specific lines of code involved</p>
+</td>
+<td width="288">
+<p>No &ndash; it can be hard to find</p>
+<p>the cause of the failure</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p><strong>White Box Testing</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><em>White box testing </em>encompasses several testing types used to evaluate the usability of an application, block of code or specific software package. One of them is listed below:</p>
+<p>&nbsp;</p>
+<p><strong><u>Unit Testing :</u></strong> It is often the first type of testing done on an application. Unit testing is performed on each unit or block of code as it is developed.</p>
+<p>Unit testing is essentially done by the programmer. As a software developer, you develop a few lines of code, a single function or an object and test it to make sure it works before continuing</p>
+<p>Unit testing helps identify majority of bugs, early in the software development lifecycle. Bugs identified in this stage are cheaper and easy to fix.</p>
+<p>&nbsp;</p>
+<p>Some of the test cases performed on the sp&uuml;r application are mentioned below:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Test case 1: Setting PIN</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Type: branch coverage in class <u>SetPinActivity</u></p>
+<p><u>&nbsp;</u></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p>The above code represents the activity of setting the PIN in the set pin activity class. After setting the pin one can choose whether to enable it or not. Based on the selected option the paths are derived in the blew flow chart.Id the user takes the decision enable pin= true, then the message &ldquo;changes saved successfully&rdquo; displayed. Else path from 9 will be executed</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Test case 2: Login PIN verifying</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Type<strong>:&nbsp; </strong>Branch coverage in class <u>LoginActivity</u></p>
+<p><strong>&nbsp;</strong></p>
+<p>In this test case the path flow in three different ways. If initially a PIN is disabled it follows the path three else it will choose to follow the path one or two as shown in the below picture.</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Test case 3: Adding new category</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Type: statement coverage for class <strong><u>CategoryActivity</u></strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Statement coverage is a measure of the percentage of statements that have been executed by test cases. Here for the class &rdquo;CategoryActivity&rdquo;. After creating a new category the save category button is clicked and the new category is saved in the database class. Once a new category is saved in database context is shown as &ldquo;category saved successfully&rdquo;.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Test case 4: Filtering Transactions</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Type: Branch coverage in the class Transaction</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;In this test case the transactions are filtered by selecting various categories like amount,optional note, payment method, category ID, transaction ID and transaction date. If the values in the category ID or payment method ID are null the new transaction is returned.</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+<p><strong>Test case 5:&nbsp; ClickToView in home page</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Type: Branch coverage in the class <strong><u>BaseActivity</u></strong></p>
+<p><strong><u>&nbsp;</u></strong></p>
+<p><strong>&nbsp; </strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Black-box Testing</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>Black Box Testing is testing the software without any knowledge of the inner workings, structure or language of the module being tested. Black box tests, as most other kinds of tests, must be written from a definitive source document, such as specification or requirements document, such as specification or requirements document. It is a testing in which the software under test is treated, as a black box .you cannot &ldquo;see&rdquo; into it. The test provides inputs and responds to outputs without considering how the software works.</p>
+<p>&nbsp;</p>
+<p>Some of the test cases conducted in the black box testing are mentioned below:</p>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td width="65">
+<p><strong>Test Case ID</strong></p>
+</td>
+<td width="74">
+<p><strong>No of Steps</strong></p>
+</td>
+<td width="173">
+<p><strong>Description </strong></p>
+</td>
+<td width="182">
+<p><strong>Expected Results</strong></p>
+</td>
+<td width="234">
+<p><strong>Actual Results</strong></p>
+</td>
+<td width="128">
+<p><strong>Pass/Fail</strong></p>
+</td>
+</tr>
+<tr>
+<td rowspan="6" width="65">
+<p><strong>&nbsp;</strong></p>
+<p><strong>1.0</strong></p>
+</td>
+<td colspan="5" width="791">
+<p><strong>Equivalence class test cases for login PIN </strong></p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 1</p>
+</td>
+<td width="173">
+<p>Maximum&nbsp; 4 integers valid-PIN / available in database</p>
+</td>
+<td width="182">
+<p>PIN accepted</p>
+</td>
+<td width="234">
+<p>PIN accepted</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 2</p>
+</td>
+<td width="173">
+<p>Maximum 4 integer valid-id / not available in database</p>
+</td>
+<td width="182">
+<p>Please enter valid PIN</p>
+</td>
+<td width="234">
+<p>Please enter valid PIN</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 3</p>
+</td>
+<td width="173">
+<p>PIN with characters</p>
+</td>
+<td width="182">
+<p>Please enter valid PIN</p>
+</td>
+<td width="234">
+<p>Please enter valid PIN</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 4</p>
+</td>
+<td width="173">
+<p>PIN left blank</p>
+</td>
+<td width="182">
+<p>Please enter PIN</p>
+</td>
+<td width="234">
+<p>Enter PIN</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 5</p>
+</td>
+<td width="173">
+<p>PIN with special characters in between</p>
+</td>
+<td width="182">
+<p>Please enter valid PIN</p>
+</td>
+<td width="234">
+<p>Please enter valid PIN</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="65">
+<p>&nbsp;</p>
+<p><strong>2.0</strong></p>
+</td>
+<td colspan="5" width="791">
+<p><strong>Application opening </strong></p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 1</p>
+</td>
+<td width="173">
+<p>Open app in the android phone</p>
+</td>
+<td width="182">
+<p>The dashboard screen should be displayed with Budget Planner displayed in the header with recent transaction in the bottom</p>
+</td>
+<td width="234">
+<p>The dashboard screen should be displayed with Budget Planner displayed in the header with recent transaction in the bottom</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4" width="65">
+<p><strong>3.0</strong></p>
+</td>
+<td colspan="5" width="791">
+<p><strong>Add income</strong></p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 1</p>
+</td>
+<td width="173">
+<p>Click on income icon to navigate to Amount spent page</p>
+</td>
+<td width="182">
+<p>The user should be able to view the Amount spent pop up box</p>
+</td>
+<td width="234">
+<p>The user clicks on &darr; and is able to view the Add amount spent pop up box</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 2</p>
+</td>
+<td width="173">
+<p>The user enters the description and the amount spent</p>
+</td>
+<td width="182">
+<p>The user should be able to enter the amount earned description, amount and select date of transaction</p>
+</td>
+<td width="234">
+<p>The user enters the amount earned, description and also selects the date of transaction</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 3</p>
+</td>
+<td width="173">
+<p>The user clicks ok and the amount is entered</p>
+</td>
+<td width="182">
+<p>The user should be able to see the amount earned after clicking ok</p>
+</td>
+<td width="234">
+<p>The user clicks ok and is able to see the amount earned</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4" width="65">
+<p><strong>4.0</strong></p>
+</td>
+<td colspan="5" width="791">
+<p><strong>Adding expense</strong></p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step1</p>
+</td>
+<td width="173">
+<p>Click on expense icon navigate to amount spent page</p>
+</td>
+<td width="182">
+<p>The user should be able to view the Amount spent pop up box</p>
+</td>
+<td width="234">
+<p>The user clicks on&nbsp; expense icon and able to view the Add amount spent pop up box</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 2</p>
+</td>
+<td width="173">
+<p>The user enters the description and the amount spent</p>
+</td>
+<td width="182">
+<p>The user should be able to enter the amount earned description and the amount</p>
+</td>
+<td width="234">
+<p>The user should be able to enter the amount spent description and the amount</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 3</p>
+</td>
+<td width="173">
+<p>The user clicks ok and the amount is entered</p>
+</td>
+<td width="182">
+<p>The user should be able to see the amount spent after clicking ok</p>
+</td>
+<td width="234">
+<p>The user clicks ok and is able to see the amount spent details</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="65">
+<p><strong>5.0</strong></p>
+</td>
+<td colspan="5" width="791">
+<p><strong>Adding new categories</strong></p>
+</td>
+</tr>
+<tr>
+<td width="74">
+<p>Step 1</p>
+</td>
+<td width="173">
+<p>Go to the navigation icon and Click the add categories to budget screen</p>
+</td>
+<td width="182">
+<p>The user should be able to save new category by clicking save button in that page</p>
+</td>
+<td width="234">
+<p>The user should be able to save new category by clicking save button in that page</p>
+</td>
+<td width="128">
+<p>PASS</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
